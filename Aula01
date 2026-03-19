@@ -1,0 +1,33 @@
+<html>
+<?php
+
+// Introdução à criação de variáveis em PHP
+// Variáveis são usadas para armazenar valores que podem ser usados posteriormente no código.
+
+// Criando variáveis
+$nome = "João"; // Variável do tipo string
+$idade = 25; // Variável do tipo inteiro
+$altura = 1.75; // Variável do tipo float
+$sobrenome = "da Silva"; // Outra variável string
+
+// Imprimindo variáveis na tela usando echo
+echo "nome: " . $nome . "<br>";
+echo "idade: " . $idade . "<br>";
+echo "altura: " . $altura . "<br>";
+echo "sobrenome: " . $sobrenome . "<br>";
+
+// Concatenação de strings:  A concatenação é feita usando o operador.
+$nomeCompleto = $nome . " " . $sobrenome;
+echo "Nome completo: " . $nomeCompleto . "<br>";
+
+// Concatenação com números
+$mensagem = "Olá, " . $nome . "! Você tem " . $idade . " anos.";
+echo $mensagem . "<br>";
+
+// Usando as variáveis em cálculos simples
+$idadeDaqui5Anos = $idade + 5;
+echo "Daqui a 5 anos, você terá " . $idadeDaqui5Anos . " anos.<br>";
+
+?>
+
+</html>
