@@ -6,7 +6,7 @@
 
 **Professor:** Prof. Dr. Renato William Rodrigues de Souza
 
-**Disciplina:** Programação Web I g
+**Disciplina:** Programação Web I 
 
 **Contexto:**
 Esta atividade tem como objetivo realizar a Análise de engenharia reversa do sistema em produção [Tropykaly Pizzas e Lanches](https://tropykalypizzaselanches.com.br/). A atividade aplica conceitos de Arquitetura de Software, Design, Modelagem UML e Padrões de Projeto baseando-se no comportamento do sistema. A análise foi conduzida com base na observação do comportamento do sistema, uma vez que não há acesso ao código-fonte, conforme proposto na atividade.
