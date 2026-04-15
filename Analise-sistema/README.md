@@ -14,15 +14,18 @@ Esta atividade tem como objetivo realizar a Análise de engenharia reversa do si
 
 O repositório está organizado da seguinte forma:
 
-analise.md: Contém a análise do sistema real, incluindo aspectos funcionais, arquiteturais e de design.
-
-comparacao.md: Apresenta a comparação entre o sistema real e o sistema didático analisado anteriormente.
-
 Diagrama UML.png: Diagrama de classes UML representando a estrutura do sistema.
+
+README.md: Arquivo de apresentação que contém os dados do aluno, o objetivo da atividade e a descrição da estrutura do projeto.
+
+analise.md: Contém a análise do sistema (Tropykaly) que inclui os aspectos funcionais, arquiteturais e de design.
 
 arquitetura.md: Proposta de arquitetura e aplicação de padrões de projeto.
 
+comparacao.md: Apresenta a comparação entre o sistema real e o sistema didático analisado anteriormente.
+
 melhorias.md: Identificação de problemas e propostas de melhoria para o sistema.
+
 
 ## Objetivo
 
