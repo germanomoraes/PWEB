@@ -3,14 +3,15 @@
 | Critério | Sistema  (Tropykaly) | Sistema Didático |
 | :--- | :--- | :--- |
 | **Arquitetura** | Cliente-Servidor distribuída, baseada em nuvem. | Monolítico, execução local simples. |
-
+| :--- | :--- | :--- |
 | **Coesão** | Alta (módulos focados em funções únicas). | Baixa (lógicas misturadas na mesma classe/arquivo). |
-
+| :--- | :--- | :--- |
 | **Acoplamento**| Baixo (Comunicação via API entre Front/Back). | Alto (Classes altamente dependentes entre si). |
-
+| :--- | :--- | :--- |
 | **Organização** | Uso de Padrões de Projeto (MVC, etc). | Estrutura procedural ou sem padrão definido. |
-
+| :--- | :--- | :--- |
 | **Flexibilidade**| Alta (Fácil escalar e adicionar produtos). | Baixa (Alterações causam quebras no sistema). |
+| :--- | :--- | :--- |
 
 **Explicação das principais diferenças:**
 O sistema real é preparado para concorrência (múltiplos usuários simultâneos) e segurança, exigindo uma arquitetura desacoplada e escalável. O sistema didático foca apenas em validar um fluxo lógico, negligenciando otimizações de performance e organização estrutural.
