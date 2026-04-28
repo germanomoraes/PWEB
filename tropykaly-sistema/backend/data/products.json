@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza Margherita P",
+    "price": 35.00,
+    "desc": "Tomate, mozzarela, manjericão",
+    "category": "pizzas",
+    "emoji": "🍕"
+  },
+  {
+    "id": 2,
+    "name": "Pizza Pepperoni P",
+    "price": 38.00,
+    "desc": "Tomate, mozzarela, pepperoni",
+    "category": "pizzas",
+    "emoji": "🍕"
+  },
+  {
+    "id": 3,
+    "name": "Pizza Calabresa P",
+    "price": 37.00,
+    "desc": "Molho de tomate, mozzarela, calabresa",
+    "category": "pizzas",
+    "emoji": "🍕"
+  },
+  {
+    "id": 4,
+    "name": "Pizza Frango com Catupiry P",
+    "price": 40.00,
+    "desc": "Frango desfiado, catupiry, cebola",
+    "category": "pizzas",
+    "emoji": "🍕"
+  },
+  {
+    "id": 5,
+    "name": "Combo Classic Burguer",
+    "price": 40.00,
+    "desc": "Hambúrguer artesanal, batata frita, refrigerante",
+    "category": "combos",
+    "emoji": "🍔"
+  },
+  {
+    "id": 6,
+    "name": "Combo Big Cheddar",
+    "price": 45.00,
+    "desc": "Duplo hambúrguer, cheddar, batata frita, refrigerante",
+    "category": "combos",
+    "emoji": "🍔"
+  },
+  {
+    "id": 7,
+    "name": "Combo Frango Crocante",
+    "price": 38.00,
+    "desc": "Frango crocante, batata frita, refrigerante",
+    "category": "combos",
+    "emoji": "🍗"
+  },
+  {
+    "id": 8,
+    "name": "X-Burguer",
+    "price": 22.00,
+    "desc": "Pão, carne, queijo, alface, tomate",
+    "category": "sanduiches",
+    "emoji": "🥪"
+  },
+  {
+    "id": 9,
+    "name": "X-Tudo",
+    "price": 28.00,
+    "desc": "Pão, carne, queijo, bacon, ovo, alface, tomate",
+    "category": "sanduiches",
+    "emoji": "🥪"
+  },
+  {
+    "id": 10,
+    "name": "Sanduíche de Frango",
+    "price": 20.00,
+    "desc": "Frango desfiado, queijo, alface, tomate",
+    "category": "sanduiches",
+    "emoji": "🥪"
+  },
+  {
+    "id": 11,
+    "name": "Refrigerante 2L",
+    "price": 12.00,
+    "desc": "Várias opções",
+    "category": "bebidas",
+    "emoji": "🥤"
+  },
+  {
+    "id": 12,
+    "name": "Suco Natural 500ml",
+    "price": 10.00,
+    "desc": "Laranja, morango ou maracujá",
+    "category": "bebidas",
+    "emoji": "🥤"
+  },
+  {
+    "id": 13,
+    "name": "Cerveja 350ml",
+    "price": 8.00,
+    "desc": "Várias marcas",
+    "category": "bebidas",
+    "emoji": "🍺"
+  }
+]

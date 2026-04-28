@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+    container_name: tropykaly-app
+    ports:
+      - "80:80"
+    volumes:
+      # Mapeia TODA a sua pasta atual para a raiz do servidor Apache
+      - ./:/var/www/html/
+    environment:
+      - VIRTUAL_HOST=localhost
+    networks:
+      - tropykaly-network
+
+networks:
+  tropykaly-network:
+    driver: bridge

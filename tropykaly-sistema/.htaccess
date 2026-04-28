@@ -1,0 +1,31 @@
+<IfModule mod_dir.c>
+    DirectoryIndex frontend/index.html index.html index.php
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Permitir acesso a arquivos e diretórios reais
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Redirecionar requisições de API para backend/index.php
+    RewriteRule ^api/(.*)$ /backend/index.php?path=$1 [QSA,L]
+
+    # Servir arquivos e diretórios do frontend e backend normalmente
+    RewriteCond %{REQUEST_URI} ^/(frontend|backend)/
+    RewriteRule ^ - [L]
+
+    # Reescrever tudo para frontend/index.html (SPA) - mantém a URL original
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /frontend/index.html [QSA]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header always set Access-Control-Allow-Origin "*"
+    Header always set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+    Header always set Access-Control-Allow-Headers "Content-Type, Authorization"
+    Header always set X-Content-Type-Options "nosniff"
+</IfModule>
