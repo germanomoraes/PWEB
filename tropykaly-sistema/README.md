@@ -203,7 +203,3 @@ docker stop <container_id>
 rm backend/data/orders.json
 echo "[]" > backend/data/orders.json
 ```
-
-
-
-Projeto aberto para uso livre.
