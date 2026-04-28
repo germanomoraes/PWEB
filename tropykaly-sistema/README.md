@@ -1,8 +1,8 @@
-# Tropykaly - Sistema de Pizzaria Funcional
+# Tropykaly - Sistema de Pizzaria 
 
 Um sistema completo de e-commerce para pizzaria com frontend responsivo e backend em PHP, rodando em Docker.
 
-## 🚀 Características
+## Características
 
 - **Frontend Responsivo**: Interface moderna e intuitiva
 - **Cardápio Dinâmico**: Categorias de produtos (Pizzas, Combos, Sanduíches, Bebidas)
@@ -12,7 +12,7 @@ Um sistema completo de e-commerce para pizzaria com frontend responsivo e backen
 - **Banco de Dados JSON**: Armazenamento simples e portável
 - **Docker**: Aplicação containerizada pronta para produção
 
-## 📋 Pré-requisitos
+## Pré-requisitos
 
 - Docker instalado
 - Docker Compose instalado
@@ -26,12 +26,12 @@ Um sistema completo de e-commerce para pizzaria com frontend responsivo e backen
 
 ---
 
-## 🎯 Objetivo do Projeto
+## Objetivo do Projeto
 Este repositório contém a evolução do sistema de pedidos da pizzaria Tropykaly. O projeto passou por uma refatoração completa, saindo de um modelo estrutural simples para uma aplicação com **Arquitetura em Camadas**, **Orientada a Objetos**, **Backend em PHP**, **Integração via API**, uso de **Padrões de Projeto** e conteinerização com **Docker**.
 
 ---
 
-## 🛠️ Tecnologias e Padrões Utilizados
+## Tecnologias e Padrões Utilizados
 - **Frontend:** HTML5, CSS3, Vanilla JavaScript (Fetch API).
 - **Backend:** PHP 8.2 (API REST).
 - **Persistência:** Banco de Dados em arquivo JSON (`db.json`).
@@ -40,7 +40,7 @@ Este repositório contém a evolução do sistema de pedidos da pizzaria Tropyka
 
 ---
 
-## 📄 Justificativa Técnica
+## Justificativa Técnica
 
 ### 1. Quais problemas foram resolvidos?
 O sistema anterior possuía um alto nível de acoplamento, onde as regras de negócio (como cálculo de preços e totais) estavam misturadas diretamente na interface web (JavaScript e manipulação do DOM). Foram eliminadas as variáveis globais que causavam vazamento de estado, as funções com múltiplas responsabilidades e a dependência direta da interface para processar dados sensíveis.
@@ -63,7 +63,7 @@ O principal desafio no deploy é a natureza híbrida da aplicação. Plataformas
 ### 6. Qual o papel do Docker no projeto?
 O Docker foi fundamental para padronizar o ambiente de desenvolvimento e testes. Através dos arquivos `Dockerfile` e `docker-compose.yml`, o projeto roda dentro de um container isolado que já possui o servidor Apache, o PHP 8.2 e o módulo `mod_rewrite` devidamente configurados. Isso elimina o clássico problema de "na minha máquina funciona", garantindo que a API e o roteamento das URLs funcionem perfeitamente em qualquer sistema operacional sem a necessidade de instalar pacotes locais.
 
-## 🛠️ Instalação e Execução
+## Instalação e Execução
 
 ### 1. Build da imagem Docker
 
@@ -85,7 +85,7 @@ Abra seu navegador e acesse:
 http://localhost
 ```
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 tropykaly-sistema/
@@ -105,7 +105,7 @@ tropykaly-sistema/
 └── README.md
 ```
 
-## 🔧 Endpoints da API
+## Endpoints da API
 
 ### Produtos
 - `GET /api/products` - Listar todos os produtos
@@ -121,7 +121,7 @@ tropykaly-sistema/
 ### Categorias
 - `GET /api/categories` - Listar categorias
 
-## 📦 Exemplo de Pedido
+## Exemplo de Pedido
 
 ```json
 {
@@ -144,13 +144,13 @@ tropykaly-sistema/
 }
 ```
 
-## 🛑 Parar a aplicação
+## Parar a aplicação
 
 ```bash
 docker-compose down
 ```
 
-## 🧪 Testar
+## Testar
 
 1. Abra http://localhost
 2. Navegue pelas categorias
@@ -159,13 +159,13 @@ docker-compose down
 5. Clique em "Finalizar Pedido"
 6. Preencha os dados e confirme
 
-## 🔄 Reiniciar
+## Reiniciar
 
 ```bash
 docker-compose restart
 ```
 
-## 📝 Customização
+## Customização
 
 ### Adicionar novos produtos
 
@@ -186,11 +186,11 @@ Edite `/backend/data/products.json` e adicione novos itens com o seguinte format
 
 Edite a função `handleCategories()` em `/backend/index.php`
 
-## ⚙️ Portas
+## Portas
 
 - **80**: Aplicação principal (Frontend + API)
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Erro de porta em uso
 ```bash
